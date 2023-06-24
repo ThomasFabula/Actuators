@@ -1,0 +1,33 @@
+Praktische Übungsbeispiele:
+
+
+Dynamik:
+DRU63    GEO - Geometrie
+DRU63    K2  - Analysedatei (Modalanalyse)
+DRU63    K6  - Analysedatei (harmonische Analyse)
+DRU63    MAC - MACRO für /POST26
+DRU63    DAT - Ergebnisdatei (Ampl, Phase)
+LITEF    GEO - Wandlergeometrie (Fa. LITEF GmbH, Freiburg)
+
+Gekoppelte Feldberechnungen:
+
+MATDAT   DOC - Beschreibung der Materialmatrzen
+ALN      MAT - Materialdaten für Aluminiumnitrid
+SI       MAT - Materialdaten für Silizum
+VIB420   MAT - Materialdaten für Piezokeramik VIBRIT420
+ZNO      MAT - Materialdaten für Zinkoxid
+
+
+ALN      DAT - Materialdaten ANSYS-Input
+QUARZ    DAT - Materialdaten ANSYS-Input
+SI       DAT - Materialdaten ANSYS-Input
+VIB420   DAT - Materialdaten ANSYS-Input
+ZNO      DAT - Materialdaten ANSYS-Input
+
+MULTI    DAT - Materialdaten ANSYS-Input
+WIN1MAT  MAC - Macrosteuerung für MULTI.DAT
+WIN2MAT  MAC - Macrosteuerung für MULTI.DAT
+
+BIMORPH  GEO - Geometrie einer Bimorph-Membran
+STATIK   ANL - statische Analysedatei
+MODAL    ANL - dynamische Analysedatei
