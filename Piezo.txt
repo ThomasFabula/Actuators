@@ -1,0 +1,32 @@
+! Materialeigenschaften und Geometrieparameter (SI-Einheiten)
+S_Si    := 7.68*10^(-12);
+S_p     := 7.91*10^(-12);
+
+h_Si    := 10*10^(-6);
+h_p     := 1*10^(-6);
+L       := 0.001;
+
+rho_p   := 5470;
+rho_Si  := 2329;
+d_31    := 5.12*10^(-12);
+w       := 0.0005;
+U       := 1;
+
+! Konstanten A, B, K
+A := S_Si*S_p*(S_p*h_Si + S_Si*h_p);
+B := h_Si*(h_Si + h_p) / (S_p*h_Si + S_Si*h_p);
+K1:= (S_Si)^2*(h_p)^4 + 4*S_Si*S_p*h_Si*(h_p)^3;
+K2:= 6*S_Si*S_p*h_Si*(h_Si)^2*(h_p)^2+4*S_Si*S_p*h_p*(h_Si)^3;
+K := K1 + K2 + (S_Si)^4*(h_p)^2;
+
+e_22 := (4*A*L^3)/(K*w);
+e_24 := (3*d_31*A*B*L^2)/K;
+ef   := e_24 / e_22;
+
+d := e_24 * U;
+F := ef   * U;
+
+eval(e_24);
+eval(ef);
+evalf(d);
+evalf(F);
