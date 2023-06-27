@@ -1,0 +1,148 @@
+Antrieb von Aktoren durch piezoelektrische Dünnschichten
+Th.Fabula, 2/93
+
+Piezoelektrische Dünnschicht-Materialien
+Für die Abschätzung der Leistungsfähigkeit des piezoelektrischen Antriebs werden die Materialien Aluminiumnitrid (AlN), Zinkoxid (ZnO) und PZT-Keramiken (PZT) zugrunde gelegt, die auch als Dünnschichten hergestellt werden können. Da die Materialdaten stark von der Art des Herstellungsprozesses und der Prozeßparameter abhängig sind, fehlen für dünne Schichten meist genaue Materialangaben. Für die folgenden Abschätzungen beziehen sich die Materialdaten, soweit nicht anders angegeben auf Bulk-Material ([Fra88], [Lan82], [Sie81]). Hinzu kommt, daß die Materialeigenschaften schichtdickenabhängig und die abgeschiedenen Schichten innere mechanische Spannungen aufweisen. In der Literatur schwanken die Angaben beispielsweise für ZnO im Vergleich zu den Bulk-Daten bei den Elastizitätsmodulen um ca.  20%, die Schichtspannungen bewegen sich im Bereich bis einige hundert MPa (Zug- und Druckspannung), die Abweichung bei den Dielektrizitätkonstanten (Permittivitäten) beträgt r  10%, die piezoelektrischen Koeffizienten dij variieren um etwa 15-20%.
+
+Piezoelektrische Kopplungsfaktoren
+Ein Maß für die Effizienz des piezoelektrischen Antriebs ist der elektromechanische Kopplungsfaktor k. Er erlaubt eine Aussage über die Möglichkeit der Umwandlung von mechanische Emech in elektrische Energie Eelek eines Materials: k2 = Emech / Eelek. Dieser Kopplungsfaktor ist sowohl von den Materialeigenschaften, als auch von der Geometrie des Wandlers abhängig, sodaß sich ein effektiver elektromechanischer Kopplungsfaktor keff = kmat  kgeo ergibt.
+Tabelle 1 zeigt einen Vergleich der Materialeigenschaften verschiedener Piezoelektrika und erlaubt eine Abschätzung der theoretisch zu erwartenden materialabhängigen elektromechanischen Kopplungsfaktoren kmat. Aufgeführt sind die beiden Kopplungsfaktoren k31 bzw. kp  für einen reinen Transversal- bzw. Planarwandler [VIB]. In Abhängigkeit der unterschiedlichen mechanischen Steifigkeiten (E-Modul: E = 1 / S11), der piezo- und dielektrischen Eigenschaften ergeben sich für Aluminiumnitrid, Zinkoxid bzw. PZT-
+ 
+Keramik (VIBRIT420) unterschiedlich große Kopplungsfaktoren in der Größenordnung von etwa 18%, 40% und 60%. Ein Vergleich der beiden Kopplungsfaktoren k31 und kp zeigt, daß der Unterschied bis zu einem Faktor 2 betragen kann. Betrachtet man zusätzlich die Schwankungen der einzelnen Materialdaten bei ZnO wie oben angegeben, so kann die Gesamtabweichung (k31/k31)² = (d31/d31)² + (S11/2S11)² + (r/2)²  25% betragen, d.h. k31 = 0,21 + 25%. Dies führt auf einen erhöhten Kopplungsfaktor von kpmat  50%. Der Einfluß der Aktorgeometrie auf den Kopplungsfaktor (d.h. kgeo) kann mit Hilfe numerischer Finite-Elemente Berechnungen unter Berücksichtigung der mechanischen und elektrischen Randbedingungen ermittelt werden.
+
+Analytische Abschätzungen der erreichbaren Hübe und Kräfte
+Bei der analytischen Abschätzung soll von einem einseitig eingespannten Silizium-Biegebalken ausgegangen werden, der von einer piezoelektrischen Dünnschicht bedeckt ist. In der Literatur (siehe [Smi91a], [Smi91b]) ist der Zusammenhang zwischen den externen Parametern (Drehmoment: M, Kraft: F, Druck: p und Spannung: U, siehe Abb. 1) und den internen Parametern (Ablenkungswinkel: , Auslenkung: , Verschiebungsvolumen: V und Ladung: Q, siehe Abb. 2) aus den piezoelektrischen Zustandsgleichungen abgeleitet. 
+
+
+
+
+
+
+Abb. 1: Externe Parameter M, F, p, U		Abb. 2: Interne Parameter , , V, Q
+
+Die symmetrische Übertragungsmatrix eij beschreibt den Biegezustand des Balkens bei unterschiedlichen mechanischen und elektrischen Belastungen:
+ 
+Die vollständigen Beziehungen lauten:
+
+
+
+
+
+
+
+
+mit den Abkürzungen A, B, K:
+
+
+
+wobei:
+	L, w	: Länge, Breite des Biegbalkens [m]
+	hSi	: Substratdicke (hier Silizium) [m]
+	hp	: Dicke der Piezoschicht [m]
+	SSi11	: Steifigkeitskoeffizient des Substrats [m2/N]
+	Sp11	: Steifigkeitskoeffizient der Piezoschicht [m2/N]
+	d31	: transversaler piezoelektrischer Koeffizient [C/N]
+	33	: Dielektrizitätskonstante in E-Feldrichtung [As/Vm]
+
+Die maximale Auslenkung  beträgt am Balkenende bei Anlegen einer Spannung U an die piezoelektrische Schicht:
+Die maximal erreichbare Kraft, die der Bimorph-Balken ausüben kann, läßt sich durch die Federsteifigkeit e22-1 ausdrücken:
+
+Der vollständige Zusammenhang ergibt sich zu:
+
+In den obigen Ausdrücken gewichten die Konstanten A [m/Pa3], B [mPa] und K [m4/Pa2] die Steifigkeiten mit den entsprechenden Schichtdicken. Der Zusammenhang zwischen der Auslenkung  bzw. ausübbaren Kraft F und der angelegten elektrischen Spannung U ist linear. Die Abhängigkeit von der Balkenlänge L ist bei der Auslenkung quadratisch, bei der Kraft umgekehrt proportional. Nachfolgend soll der Einfluß der Wandlergeometrie untersucht werden. Variiert wurden die Balkenlänge L, die Substratdicke hSi und die Piezoschichtdicke hp. Die Steifigkeitskoeffizienten vom Silizium-Substrat SSi11 und der Piezoschicht Sp11, sowie der transversale piezoelektrische Koeffizient d31 für ZnO wurden der Tabelle 1 entnommen. Tabelle 2 enthält die Proportionalitätskonstanten e24 zwischen der Auslenkung und der angelegten Spannung U. Die Balkenbreite w beträgt bei den Abschätzungen 50 m:
+
+Tabelle 2:	Auslenkungs-Konstanten e24 für einen Silizium-Balken mit ZnO-Schicht
+
+ hSi	 hp	 L = 1 mm	 2 mm	 5 mm
+ 10 m	 1 m	 0,12 m/V	 0,47 m/V	 2,95 m/V
+	 5 m	 0,06 m/V	 0,26 m/V	 1,60 m/V
+ 20 m	 1 m	 0,03 m/V	 0,13 m/V	 0,82 m/V
+	 5 m	 0,02 m/V	 0,09 m/V	 0,57 m/V
+ 30 m	 1 m	 0,02 m/V	 0,06 m/V	 0,38 m/V
+	 5 m	 0,01 m/V	 0,05 m/V	 0,29 m/V
+
+Ein Vergleich mit FEM-Rechnungen zeigt, daß die analytischen Ergebnisse bei den beiden Extremfällen (fett gedruckt) bis auf etwa 10 % übereinstimmen und damit für erste Abschätzungen herangezogen werden können. In Tabelle 3 sind die Proportionalitätskonstanten e24/e22 zwischen der Kraft F und der angelegten Spannung U aufgelistet. 
+
+Tabelle 3:	Kraft-Konstanten e24/e22 für einen Silizium-Balken mit ZnO-Schicht
+
+ hSi	 hp	 L = 1 mm	 2 mm	 5 mm
+ 10 m	 1 m	 2,43 N/V	 1,22 N/V	 0,49 N/V
+	 5 m	 2,45 N/V	 1,23 N/V	 0,49 N/V
+ 20 m	 1 m	 4,86 N/V	 2,43 N/V	 0,97 N/V
+	 5 m	 4,88 N/V	 2,44 N/V	 0,98 N/V
+ 30 m	 1 m	 7,29 N/V	 3,64 N/V	 1,46 N/V
+	 5 m	 7,31 N/V	 3,66 N/V	 1,46 N/V
+
+Legt man eine typische Feldstärke von E = 10 V/m bei ZnO zugrunde, so ergibt sich eine erreichbare Auslenkung von 10 V * 2,95 m/V = 29,5 m bei den Balkenabmessungen L = 5 mm, hSi = 10 m und hp = 1 m (Variante 1). Die maximal ausübbare Kraft beträgt 50 V * 7,31 N/V = 366 N  0,4 mN für einen Balken mit den Abmessungen L = 1 mm, hSi = 30 m und hp = 5 m (Variante 2). 
+Je länger der Balken ist, desto größer werden die Auslenkungen, während die ausübbaren Kräfte geringer werden. Wie aus Tabelle 3 ersichtlich, hat die Piezoschichtdicke hp kaum einen Einfluß auf die Kräfte, lediglich die Balkendicke hSi. Die Kraftwirkung läßt sich weiter steigern, wenn die Balkenbreite w vergrößert wird: F  d31 w hSi / L. Im Gegensatz zu den Kräften geht bei den Auslenkungen die effektive Gesamtdicke des Balkens heff = f(hSi, hp) quadratisch im Nenner ein:   d31 w (L/heff)2. In der Tabelle 4 sind die beiden Extremfälle (Variante 1: langer Balken und Variante 2: kurzer Balken) analytisch mit den Materialien AlN und PZT (siehe Materialdaten aus Tabelle 1) berechnet worden. Während die Steifigkeiten S11 von AlN, ZnO und PZT nicht stark differieren (Verhältnis: 1,0 / 2,24 / 4,36), unterscheiden sich die piezoelektrischen Koeffizienten d31 sehr stark (Verhältnis: 1,0 / 2,6 / 80). Die elektrische Feldstärke E betrug jeweils 10 V pro m Schichtdicke.
+
+Tabelle 4:	Einfluß des Schichtsystems auf die Auslenkungen und Kräfte
+
+ Größe:	 AlN	 ZnO	 PZT	Verhältnis	Dimension
+ max [m]	 19,1	 29,5	 548	 1/1,5/29	Variante 1
+ U = 10 V
+ Fmax [N]	  3,8	  4,9	 81,7	 1/1,3/22	
+ max [m]	 0,34	  1,0	 11,5	 1/2,9/34	Variante 2
+ U = 50 V
+ Fmax [N]	 273	 366	 6500	 1/1,3/24	
+
+Aufgrund des hohen piezoelektrischen transversalen Koeffizienten d31 bietet PZT die größten möglichen Auslenkungen (ca. 0,5 mm) und Kräfte (ca. 6,5 mN). In der 5. Spalte der Tabelle sind die Verhältnisse der bei gleicher Geometrie und Spannung erreichbaren Auslenkungen und Kräfte dargestellt.
+
+Nichtlineares Großsignalverhalten
+Sowohl die analytischen Abschätzungen, als auch die numerischen FEM-Berechnungen gehen von einem linearen piezoelektrischen Zusammenhang zwischen der elektrischen Feldstärke und den mechanischen Reaktionen des Systems aus. Bei hohen Feldstärken können aber nichtlineare Effekte auftreten, sog. Elektrostriktion:
+
+i = dijEj + dijkEjEk + ...
+
+Aus der Literatur [Smi92a] ist bekannt, daß für einen Si3N4-ZnO-Bimorph die Auslenkungen eine sowohl lineare, als auch quadratische Abhängigkeit von der elektrischen Spannung haben können. Empirisch ermittelt ergibt sich eine etwa 2,5-fach größere Abhängigkeit vom quadratischen Spannungsanteil:   (U + 2,5*U2). 
+ 
+Finite-Elemente Berechnungen
+Mit Hilfe piezoelektrischer FEM-Berechnungen wurde der Einfluß des Schichtdickenverhältnisses von Siliziumstruktur zu Dünnschicht untersucht. Berechnet wurde für Bimorphmembranen der effektive elektromechanische Kopplungsfaktor keff, der sich durch die Serien- fs und Parallelresonanzfrequenz fp des piezoelektrischen Ersatzschaltbildes ausdrücken läßt:
+
+
+
+Ziel der Schichtdickenoptimierung ist ein möglichst hoher elektromechanischer Kopplungsfaktor zwecks maximaler Bauteilhübe und Stellkräfte. Das verwendete dreidimensionale FE-Modell einer Viertelmembran berücksichtigt die anisotropen Materialeigenschaften der ZnO-Dünnschicht und die kristallbedingte (111)-Einspannung der Siliziummembran. Die Abmessungen der Membran betragen 9,2 x 9,2 mm², die Membrandicke beträgt 20 m. Das FE-Modell weist eine durchgehende, unstrukturierte ZnO-Beschichtung auf. Es wurden die Materialeigenschaften von Bulkmaterial verwendet und eine evtl. Verspannung der Zinkoxidschicht nicht berücksichtigt. In Abb. 3 ist der effektive elektromechanische Kopplungsfaktor keff für den Grundmode für verschiedene piezoelektrische Schichten in Abhängigkeit des Schichtdickenverhältnisses tSi/tpiezo dargestellt. In Tabelle 5 sind die für für veschiedenen Materialien berechneten, jeweils optimalen Schichtdicken tpiezo, die Resonanzfrequenzen fs und fp, sowie die daraus abgeleiteten maximalen effektiven Kopplungsfaktoren keff aufgelistet. 
+
+Tabelle 5:	Vergleich der Materialien AlN, ZnO und PZT. Abhängigkeit des effektiven Kopplungsfaktors keff vom Schichtdickenverhältnis: 
+ Material:	 tSi/tpiezo	 topt 	 fs [kHz]	 fp [kHz]	 keff
+ AlN	 3,3 - 4	  5-6 m	 4,58	 4,60	 0,09
+ ZnO	 2 - 2,5	  91 m	 4,05	 4,15	 0,22
+ PZT	 1,2 - 1,5	 152 m	 3,35	 3,63	 0,39
+
+
+ 
+Im Gegensatz zu den rein materialabhängigen Kopplungsfaktoren kmat der Tabelle 1 enthalten die effektiven Kopplungsfaktoren keff zusätzlich den Geometrieanteil für eine quadratische Membran. In den Zusammenhang zwischen den Auslenkungen bzw. Kräften und der elektrscihen Spannung geht direkt der effektive elektromechansiche Kopplungsfaktoren ein [VIB]:
+  keff U  und  F  keff U
+
+Ein weiterer Einfluß auf die Effizienz kann die Art der Ansteuerung des Wandlers haben. Es ist daher sicherzustellen, daß die piezoelektrische Dünnschicht strukturiert wird, um im Bereich von Zugspannungen (bzw. Druckspannungen) auf der Bauteiloberfläche nur Dehnungen (bzw. Kontraktionen) zu erzeugen. 
+
+Optimierung des piezoelektrischen Antriebs
+Das piezoelektrische Wandlungsprinzip eignet sich gut für den Antrieb von Aktoren. Durch die geeignete Wahl der Strukturgeometrie (Balken, Membran, BOSS-Membran), der Schichtdickenverhätnisse und der Elektroden- und Schichtstrukturierung kann der Geometrieanteil des Kopplungsfaktors kgeo vergrößert werden. Die Optimierung der Materialeigenschaften ist nur in einem durch die Prozeßtechnologie vorgegebenem engen Bereich möglich. Eine Optimierung kann erfolgen:
+-durch eine geeignete Wahl des Substrates (Silizium, Si3N4) und der piezoelektrischen Schicht (AlN, ZnO, PZT) kann der materialabhängige Anteil kmat verbessert werden.
+- 	das Verhältnis der Steifigkeiten des Substrates und der Schicht ESub / Epiezo sollte im Rahmen der technologischen Möglichkeiten so groß wie möglich gewählt werden
+- 	durch eine geeignete Strukturierung der piezoelektrischen Schicht und bipolarer elektrischer Anregung kann eine etwa doppelte Auslenkung erreicht werden.
+- 	bei Anwendungen, die einen resonanten Betrieb des Aktors zulassen, erhöht sich die dyamische Amplitude Adynam um etwa die Schwingungsgüte Q. Diese beträgt bei Biegebalken ca. 500-1000 bei unstrukturierten Membranen etwa 50-100 (bei Normalluftdruck).
+-bei hohen Feldstärken, kann aufgrund der Elektrostriktion etwa mit einem zusätzlichen quadratischen Spannungsbeitrag gerechnet werden (ca. Faktor 2).
+- 	durch Vergrößerung des Verhältnisses von Wandlerbreite zu Balkenlänge w/L kann etwa eine Größenordnung bei der Kraftwirkung erzielt werden. Die Auslenkungen sind in erster Näherung unabhängig von der Wandlerbreite.
+- 	durch prozeßtechnisch bedingte Einflüsse kann der piezoelektrische Koeffizient d31 um etwa 20-50% gesteigert werden.
+
+Allerdings ist zu beachten, daß bei praktischen Anwendungen die piezoelektrischen Dünnschichten in der Regel innere Spannungen aufweisen können und auch Hystereseeffekte [Smi92b] auftreten können.
+
+ 
+Literaturverzeichnis:
+
+[Fra88] :	Franz, J.: Piezoelektrische Sensoren auf Siliziumbasis für akustische Anwendungen, Fortschritt-Berichte VDI, Reihe 10, Nr.: 87, VDI Verlag, Düsseldorf (1988)
+
+[Lan82] :	Landolt-Börnstein, Zahlenwerte und Funktionen aus Naturwissenschaft und Technik, Gruppe III, Band 17a, Berlin, Springer Verlag (1982)
+
+[Sie81] :	VIBRIT - Piezokeramik von Siemens, Datenblatt, Stand: Januar 1981, Redwitz
+
+[Smi91a] :	Smits, J.G., Dalke, S.I., Cooney,T.K., The constituent equations of piezoelectric bimorphs, Sensors & Actuators A, 28 (1991) p. 41-61
+
+[Smi91b] :	Smits, J.G., Choi, W., The constituent equations of piezoelectric heterogeneous bimorphs, IEEE Transactions on UFFC, Vol. 38, No. 3 (1991), p.256
+
+[Smi92a] :	Smits, J.G., Choi, W., Very large deflection with quadratic voltage dependence of ZnO on Si3N4 bimorph, IEEE Transactions on UFFC, Letters, Vol. 39, No. 2 (1992) p. 302
+
+[Smi92b] :	Smits, J.G., Design consideration of a piezoelectric-on-silicon microrobot, Sensors & Actuators A, 35 (1992) p. 129-135
+
+[VIB] :	VIBRIT - Piezoceramics from Siemens, Ord.-No.: N-281/5035-101
+
